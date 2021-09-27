@@ -21,11 +21,11 @@ public:
     for (; i < s.length() && s[i] >= '0' && s[i] <= '9'; i++) {
       int t = s[i] - '0';
       if (flag) {
-        if (r < MIN / 10 || ((r == MIN / 10) && (t > 8)))
+        if (r < MIN / 10 || (r == MIN / 10 && t > 8))
           return MIN;
         r = r * 10 - t;
       } else {
-        if (r > MAX / 10 || ((r == MAX / 10) && (t > 7)))
+        if (r > MAX / 10 || (r == MAX / 10 && t > 7))
           return MAX;
         r = r * 10 + t;
       }

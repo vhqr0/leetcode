@@ -3,7 +3,7 @@
 
 class Solution {
 public:
-  bool ip_rev(int x) {
+  bool ip_rec(int x) {
     if (x < 0)
       return false;
     int r = 0;
@@ -15,7 +15,7 @@ public:
     return r == x;
   }
 
-  bool ip_rev_half(int x) {
+  bool ip_rec_half(int x) {
     if (x < 0 || (!(x % 10) && x))
       return false;
     int r = 0;
@@ -27,6 +27,6 @@ public:
   }
 
   bool isPalindrome(int x) {
-    return ip_rev_half(x);
+    return ip_rec_half(x);
   }
 };

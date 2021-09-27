@@ -35,7 +35,7 @@ public:
         else if (i < 3)
           dp[j][j + i] = s[j] == s[j + i];
         else
-          dp[j][j + i] = (s[j] == s[j + i]) && dp[j + 1][j + i - 1];
+          dp[j][j + i] = s[j] == s[j + i] && dp[j + 1][j + i - 1];
         if (dp[j][j + i] && i > maxlen) {
           maxlen = i;
           maxpos = j;
