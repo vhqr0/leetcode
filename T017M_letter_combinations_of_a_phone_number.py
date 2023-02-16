@@ -20,4 +20,4 @@ class Solution:
         if not digits:
             return []
         ls = [letters_map[c] for c in digits]
-        return list(''.join(p) for p in itertools.product(*ls))
+        return [''.join(p) for p in itertools.product(*ls)]

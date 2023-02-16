@@ -4,7 +4,7 @@ class Solution:
         if x < 0:
             return False
 
-        nums = list()
+        nums = []
 
         while x != 0:
             x, m = divmod(x, 10)

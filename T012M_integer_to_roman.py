@@ -1,7 +1,7 @@
 class Solution:
 
     def intToRoman(self, num: int) -> str:
-        ss = list()
+        ss = []
 
         d, num = divmod(num, 1000)
         ss.append(d * 'M')

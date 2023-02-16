@@ -4,7 +4,7 @@ class Solution:
         if numRows <= 1:
             return s
 
-        ss = list('' for _ in range(numRows))
+        ss = ['' for _ in range(numRows)]
 
         block_size = (numRows - 1) * 2
 
